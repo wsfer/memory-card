@@ -4,7 +4,7 @@
 }
 
 .header__logo {
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 7vw, 3.2rem);
   text-align: center;
   text-decoration: none;
 }
