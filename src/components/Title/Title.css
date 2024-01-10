@@ -1,0 +1,11 @@
+.title {
+  -webkit-text-stroke: var(--pokemon-stroke) 0.07em;
+  color: var(--pokemon-font);
+  display: block;
+  font-family: 'Pokemon Solid';
+}
+
+.title__overlap-letter {
+  position: relative;
+  z-index: 1;
+}
