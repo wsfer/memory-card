@@ -1,0 +1,17 @@
+.scoreboard {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.scoreboard__row {
+  display: flex;
+}
+
+.scoreboard__text {
+  margin: 0;
+}
+
+.scoreboard__text:last-child {
+  margin-left: auto;
+}
