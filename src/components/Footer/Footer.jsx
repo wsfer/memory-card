@@ -1,4 +1,5 @@
 import { Container } from '../Container/Container';
+import './Footer.css';
 
 export function Footer() {
   return (
