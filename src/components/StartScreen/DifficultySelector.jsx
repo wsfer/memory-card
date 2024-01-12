@@ -1,3 +1,5 @@
+import './DifficultySelector.css';
+
 export function DifficultySelector({ difficulty, handleChange }) {
   return (
     <div className="difficulty-selector">

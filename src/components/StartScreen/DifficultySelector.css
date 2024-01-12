@@ -1,0 +1,47 @@
+.difficulty-selector {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.difficulty-selector__input-container {
+  position: relative;
+}
+
+.difficulty-selector__input {
+  left: -9999px;
+  position: absolute;
+}
+
+.difficulty-selector__label {
+  cursor: pointer;
+}
+
+.difficulty-selector input:checked + label::before {
+  animation: blink 0.7s steps(2, jump-none) infinite;
+  content: '▶';
+  left: -1.2em;
+  position: absolute;
+}
+
+.difficulty-selector input:hover + label,
+.difficulty-selector input:focus + label {
+  opacity: 0.7;
+}
+
+@media (max-width: 30rem) {
+  .difficulty-selector {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
