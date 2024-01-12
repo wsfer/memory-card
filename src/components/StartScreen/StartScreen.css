@@ -1,0 +1,46 @@
+.startscreen {
+  align-items: center;
+  display: flex;
+}
+
+.startscreen__title {
+  animation: pulse 5s ease-in-out infinite;
+  font-size: clamp(2.8rem, 12vw, 6.4rem);
+  margin: 0.25em 0;
+  text-align: center;
+}
+
+.startscreen__button {
+  background-color: var(--dark);
+  border: none;
+  box-shadow: 4px 4px 2px var(--shadow);
+  cursor: pointer;
+  color: var(--white);
+  display: block;
+  font-family: 'Press Start 2P';
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 2em auto;
+  padding: 0.5em 1em;
+}
+
+.startscreen__button:hover,
+.startscreen__button:focus {
+  background-color: var(--white);
+  color: var(--dark);
+  outline: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}

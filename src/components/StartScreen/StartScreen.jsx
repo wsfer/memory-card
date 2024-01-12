@@ -1,6 +1,7 @@
 import { Container } from '../Container/Container';
 import { Title } from '../Title/Title';
 import { DifficultySelector } from './DifficultySelector';
+import './StartScreen.css';
 
 export function StartScreen({ difficulty, setDifficulty, startGame }) {
   const handleChange = (event) => setDifficulty(event.target.value);
