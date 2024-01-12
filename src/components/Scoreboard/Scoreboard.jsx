@@ -6,7 +6,7 @@ export function Scoreboard({ currentScore, bestScore }) {
     <section aria-label="Scoreboard" className="scoreboard">
       <Container>
         <div className="scoreboard__row">
-          {currentScore && (
+          {currentScore !== null && (
             <p className="scoreboard__text">Score: {currentScore}</p>
           )}
           <p className="scoreboard__text">Best Score: {bestScore || 0}</p>
