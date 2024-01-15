@@ -6,22 +6,22 @@ export function useFetch(url) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    let ignore = false;
     setLoading(true);
-    const cachedData = localStorage.getItem(url);
 
-    if (cachedData) {
-      setData(JSON.parse(cachedData));
-      setLoading(false);
-    } else {
-      fetch(url)
-        .then((res) => res.json())
-        .then((jsonData) => {
-          localStorage.setItem(url, JSON.stringify(jsonData));
+    fetch(url)
+      .then((res) => res.json())
+      .then((jsonData) => {
+        if (!ignore) {
           setData(jsonData);
           setLoading(false);
-        })
-        .catch((error) => setError(error));
-    }
+        }
+      })
+      .catch((error) => setError(error));
+
+    return () => {
+      ignore = true;
+    };
   }, [url]);
 
   return { data, loading, error };
