@@ -1,0 +1,53 @@
+.loading {
+  align-items: center;
+  background-color: var(--dark-opaque);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.loading__animation-container {
+  display: flex;
+  gap: 0.75em;
+}
+
+.loading__dot {
+  animation: scaleUpDown 1s linear infinite;
+  background-color: var(--red);
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+}
+
+.loading__first-dot {
+  animation-delay: 0s;
+}
+
+.loading__second-dot {
+  animation-delay: 0.25s;
+}
+
+.loading__third-dot {
+  animation-delay: 0.5s;
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
