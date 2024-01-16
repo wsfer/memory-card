@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header handleClick={handleGameOver} />
       <Scoreboard currentScore={score} bestScore={bestScore} />
       {isGameOver ? (
         <StartScreen
