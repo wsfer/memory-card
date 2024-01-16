@@ -1,0 +1,20 @@
+.gamescreen {
+  background-image: url('../../assets/pokeball-background.png');
+  background-position: center;
+  background-size: contain;
+  color: var(--white);
+  position: relative;
+}
+
+.gamescreen__status {
+  text-align: center;
+}
+
+.gamescreen__card-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(250px, 80vw), 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
