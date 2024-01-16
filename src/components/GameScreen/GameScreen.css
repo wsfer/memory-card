@@ -16,5 +16,53 @@
   grid-template-columns: repeat(auto-fill, minmax(min(250px, 80vw), 1fr));
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0;
+}
+
+.gamescreen__gameover {
+  align-items: center;
+  background-color: var(--dark-opaque);
+  bottom: 0;
+  content: '';
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gamescreen__gameover-box {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 2px var(--shadow);
+  color: var(--dark);
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gamescreen__gameover-title {
+  margin: 0;
+}
+
+.gamescreen__gameover-button {
+  background-color: var(--dark);
+  border: none;
+  box-shadow: 4px 4px 2px var(--shadow);
+  cursor: pointer;
+  color: var(--white);
+  display: block;
+  font-family: 'Press Start 2P';
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+}
+
+.gamescreen__gameover-button:hover,
+.gamescreen__gameover-button:focus {
+  background-color: var(--white);
+  color: var(--dark);
+  outline: none;
 }
