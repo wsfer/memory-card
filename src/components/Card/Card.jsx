@@ -4,12 +4,12 @@ import { Loading } from '../Loading/Loading';
 import cardback from '../../assets/cardback.jpg';
 import './Card.css';
 
-export function Card({ url, handleClick }) {
+export function Card({ url, handleClick, flip }) {
   const { data, loading, error } = useFetch(url);
 
   return (
     <button
-      className={loading ? 'card card--flipped-back' : 'card'}
+      className={loading || flip ? 'card card--flipped-back' : 'card'}
       onClick={handleClick}
     >
       <div className="card__inner">
