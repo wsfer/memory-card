@@ -1,3 +1,4 @@
+// Card quantity scales with level and difficulty
 export function getCardNumber(difficulty, level) {
   const increment = { easy: 1, normal: 2, hard: 4 };
   const initial = { easy: 3, normal: 4, hard: 4 };
