@@ -1,7 +1,5 @@
 .gamescreen {
-  background-image: url('../../assets/pokeball-background.png');
-  background-position: center;
-  background-size: contain;
+  background-image: linear-gradient(var(--pokemon-stroke), var(--pokemon-font));
   color: var(--white);
   position: relative;
 }
