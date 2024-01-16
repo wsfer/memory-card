@@ -42,7 +42,7 @@
 
 .card__front {
   background-color: var(--white);
-  border: 0.75em solid var(--dark);
+  border: 0.5em solid var(--dark);
   color: var(--dark);
   display: flex;
   flex-direction: column;
@@ -54,5 +54,5 @@
 }
 
 .card__front-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }

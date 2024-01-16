@@ -11,7 +11,7 @@
 .gamescreen__card-list {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(250px, 80vw), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 80vw), 1fr));
   list-style: none;
   margin: 0;
   padding: 1rem 0;
