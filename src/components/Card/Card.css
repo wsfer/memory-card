@@ -1,0 +1,58 @@
+.card {
+  aspect-ratio: 585 / 819; /* Same as cardback.jpg */
+  background-color: transparent;
+  border: none;
+  border-radius: none;
+  font-family: 'Press Start 2P';
+  outline: none;
+  padding: 0;
+  perspective: 1000px;
+  width: 100%;
+}
+
+.card--flipped-back .card__inner {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__inner,
+.card:focus .card__inner {
+  transform: rotateY(25deg);
+}
+
+.card__inner {
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.card__front,
+.card__back {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  box-shadow: 4px 4px 2px var(--shadow);
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.card__front {
+  background-color: var(--white);
+  border: 0.75em solid var(--dark);
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__back {
+  transform: rotateY(180deg);
+}
+
+.card__front-title {
+  font-size: 1.5rem;
+}
