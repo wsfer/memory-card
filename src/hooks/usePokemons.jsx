@@ -18,8 +18,9 @@ export function usePokemons(data, level, difficulty) {
     if (selectedPokemons.includes(pokemon)) {
       return { isGameOver: true, totalCards, clickedCards };
     } else {
+      const isGameOver = level === 7 && totalCards === clickedCards + 1;
       setSelectedPokemons([...selectedPokemons, pokemon]);
-      return { isGameOver: false, totalCards, clickedCards: clickedCards + 1 };
+      return { isGameOver, totalCards, clickedCards: clickedCards + 1 };
     }
   };
 
