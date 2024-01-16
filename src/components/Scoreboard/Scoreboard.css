@@ -6,12 +6,26 @@
 
 .scoreboard__row {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
 }
 
 .scoreboard__text {
   margin: 0;
 }
 
-.scoreboard__text:last-child {
-  margin-left: auto;
+.scoreboard__gained-score {
+  animation: fadeout 1s ease-in-out forwards;
+  color: var(--pokemon-stroke);
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
