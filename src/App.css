@@ -19,6 +19,7 @@
   --pokemon-stroke: #3761a8;
   --red: #e41f25;
   --dark: #2b2b2a;
+  --dark-opaque: rgb(43, 43, 42, 0.5);
   --white: #fff;
   --shadow: rgba(0, 0, 0, 0.4);
 }
@@ -26,6 +27,10 @@
 body {
   font-family: 'Press Start 2P';
   margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Allows main content to fill remaining space */
