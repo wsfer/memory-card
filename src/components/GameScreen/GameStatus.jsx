@@ -1,9 +1,6 @@
-import { getCardNumber } from './getCardNumber';
 import { captalizeString } from '../../utils/capitalizeString';
 
-export function GameStatus({ difficulty, level, clickedCards }) {
-  const totalCards = getCardNumber(difficulty, level);
-
+export function GameStatus({ difficulty, level, clickedCards, totalCards }) {
   return (
     <section aria-label="Game Status" className="gamescreen__status">
       <p className="gamescreen__difficulty">{captalizeString(difficulty)}</p>
